@@ -141,6 +141,19 @@ img {
   width: 90%;
 }
 
+/* Inner Page Grid Container */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  gap: 1.5rem;
+
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
 .list li a:hover {
   color: var(--primary-color) !important;
 }
